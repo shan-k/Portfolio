@@ -211,6 +211,11 @@ ul a {
 
 }
 
+.para{
+  display: flex;
+  flex-direction: row;
+}
+
 
 /* footer styling */
 
