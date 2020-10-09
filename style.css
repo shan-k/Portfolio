@@ -300,6 +300,10 @@ button {
       margin: 0 0 10% 25%;
     }
 
+    nav {
+      width: 100%;
+    }
+
     ul a {
       font-size: 1.2em;
     }
