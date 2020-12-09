@@ -405,6 +405,7 @@ button {
   font-size: 15px;
   font-weight: bold;
   border: none;
+  box-shadow: 10px 5px 5px grey;
   transition: .3s;
   
 
@@ -527,10 +528,9 @@ button {
     position: absolute;
     background-color:  #E0FEFE;
     border-radius: 10px;
-    top:190%;
+    top:80%;
 
   
-    
   }
   
   .icon-bar a {
@@ -542,6 +542,10 @@ button {
     transition: all 0.3s ease;
   }
   
+  #myBtn {
+    font-size:1.5em;
+  
+  }
 
 }
 
