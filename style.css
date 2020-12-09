@@ -523,8 +523,24 @@ button {
    
   }
 
-  
+  .icon-bar {
+    position: absolute;
+    background-color:  #E0FEFE;
+    border-radius: 10px;
+    top:190%;
 
+  
+    
+  }
+  
+  .icon-bar a {
+    display: block;
+    text-align: center;
+    padding: 20px;
+    color: #000000;
+    font-size: 40px;
+    transition: all 0.3s ease;
+  }
   
 
 }
