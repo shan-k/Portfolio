@@ -1,10 +1,23 @@
-var app = document.getElementById('type');
+var typeString = ['I am Shannon Kelly'];
+var i = 0;
+var count = 0
+var selectedText = 'I am';
+var text = 'I am';
 
-var typewriter = new Typewriter(app, {
-    loop: !true
-});
-typewriter.typeString('Hi, I\'m Shannon Kelly')
-    .start();
+(function type() {
+    if (count == typeString.length) {
+        count = 0;
+    }
+    selectedText = typeString[count];
+    text = selectedText.slice(0, ++i);
+    document.getElementById('typing').innerHTML = text;
+    if (text.length === selectedText.length) {
+    }
+    setTimeout(type, 200);
+
+}());
+
+
 
 
 window.onscroll = function () { scrollFunction() };
