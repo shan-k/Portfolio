@@ -24,11 +24,11 @@ window.onscroll = function () { scrollFunction() };
 
 function scrollFunction() {
     var mybutton = document.getElementById("myBtn");
-    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 60) {
         document.getElementById("navbar").style.height = "15vh";
         mybutton.style.display = "block";
     } else {
-        document.getElementById("navbar").style.height = "10vh";
+        document.getElementById("navbar").style.height = "15vh";
         mybutton.style.display = "none";
     }
 }
@@ -39,9 +39,27 @@ function topFunction() {
     document.documentElement.scrollTop = 0;
 }
 
-var togglebutton = document.getElementsByClassName('toggle')[0]
-var navlinks = document.getElementsByClassName('links')[0]
+function navSlide() {
+    const burger = document.querySelector(".burger");
+    const nav = document.querySelector(".nav-links");
+    const navLinks = document.querySelectorAll(".nav-links li");
 
-togglebutton.addEventListener('click', () => {
-    navlinks.classList.toggle('active')
-})
+    burger.addEventListener("click", () => {
+        //Toggle Nav
+        nav.classList.toggle("nav-active");
+
+        //Animate Links
+        navLinks.forEach((link, index) => {
+            if (link.style.animation) {
+                link.style.animation = ""
+            } else {
+                link.style.animation = `navLinkFade 0.5s ease forwards ${index / 7 + 0.5}s`;
+            }
+        });
+        //Burger Animation
+        burger.classList.toggle("toggle");
+    });
+
+}
+
+navSlide();
