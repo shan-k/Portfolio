@@ -175,7 +175,7 @@ header .profile-img .photo-bg {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	font-size: 20px;
+	font-size: 1.5em;
 	margin-top: 20%;
 }
 
@@ -184,12 +184,14 @@ header .profile-img .photo-bg {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-	margin-left: 10%;
+  margin-left: 10%;
+  
 }
 
 .about-content  {
 	margin-left: 40%;
-	line-height: 1.5;
+  line-height: 1.5;
+
 }
 
 .skills{
@@ -465,6 +467,14 @@ button {
     font-size: 70px;
 }
 
+#bigger,p{
+  font-size: 2em;
+}
+
+#bigger{
+  font-weight: bold;
+}
+
 }
 
 
@@ -523,15 +533,15 @@ button {
     max-width: 700px;
   }
 
+  .overlay{
+    max-height: 700px;
+    max-width: 800px;
+  }
+
+
   footer{
       height: 50vh;
-      
   }
-
-  p{
-    font-size: 1.5em;
-  }
-
   .footer-p{
      
     align-items: center;
