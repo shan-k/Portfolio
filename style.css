@@ -160,6 +160,7 @@ header .profile-img .photo-bg {
 
 .about-img {
 	box-shadow:10px 10px 12px 8px rgba(0, 0, 0, 0.3);
+  margin-top: 5%;
 }
 
 #bigger{
@@ -189,9 +190,9 @@ header .profile-img .photo-bg {
 }
 
 .about-content  {
-	margin-left: 40%;
+	margin-left: 30%;
   line-height: 1.5;
-
+   font-size: 1.2em;
 }
 
 .skills{
@@ -297,7 +298,7 @@ nav {
 .burger div {
   width: 25px;
   height: 3px;
-  background-color: rgb(226, 226, 226);
+  background-color: rgb(92, 91, 91);
   margin: 5px;
   transition: all 0.3s ease;
 }
@@ -324,6 +325,7 @@ nav {
 
 .box-a{
   display: flex;
+  position: relative;
   flex-direction: row;
   overflow: hidden;
 }
@@ -346,12 +348,12 @@ nav {
 
 .overlay {
   position: absolute;
+  top: 0;
   left: 0;
   right: 0;
-  top:0;
   bottom: 0;
-  max-height:500px;
-  max-width: 500px;
+  max-height:100%;
+  max-width: 100%;
   opacity: 0;
   border-radius: 10px;
   transition: .5s ease;
